@@ -8,17 +8,10 @@
    NAVIGATION
    ========================================================================== */
 
-.site-nav {
-    display: flex;
-    justify-content: flex-end;
-    outline: red solid 1px;
-}
-
 .site-nav__list {
     display: flex;
     gap: 2rem;
     list-style-type: none;
-    outline: solid 3px green;
 }
 
 .site-nav__link {
