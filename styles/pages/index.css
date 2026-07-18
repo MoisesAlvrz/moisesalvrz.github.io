@@ -1,0 +1,132 @@
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+        background-image: repeating-linear-gradient(
+            45deg,
+            rgba(128, 128, 128, 0.1) 0px,
+            rgba(128, 128, 128, 0.1) 25px,
+            transparent 25px,
+            transparent 50px
+            )
+}
+
+.hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+        "item-1 item-2 item-3"
+        "item-1 item-4 item-5";
+    padding: 2rem 4rem;
+}
+
+.hero__grid a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero__item {
+    border-radius: 15px;
+    background-color: rgba(52, 51, 51, 0.571);
+    display: flex;
+    padding: 1rem;
+}
+
+.hero__item--1 {
+    grid-area: item-1;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.hero__item--1 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero__item--1 h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.hero__item--2 {
+    grid-area: item-2;
+}
+
+.hero__item--3 {
+    grid-area: item-3;
+}
+
+.hero__item--4 {
+    grid-area: item-4;
+}
+
+.hero__item--5 {
+    grid-area: item-5;
+}
+
+/* ==========================================================================
+   TOOLS SECTION
+   ========================================================================== */
+
+.tools {
+    background-color: rgba(0, 19, 47, 0.166);
+}
+
+.tools__header {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.tools__list {
+    color: gray;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-self: center;
+}
+
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
+
+.about__header {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(105, 32, 69);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.about img {
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.about__content {
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+/* ==========================================================================
+   PROJECTS SECTION
+   ========================================================================== */
+
+.projects__header {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(70, 46, 94);
+    text-align: center;
+    padding: 1rem 0;
+}
